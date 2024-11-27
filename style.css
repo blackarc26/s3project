@@ -125,20 +125,21 @@
     color: #007bff;
   }
   
-  .upload-container {
-    background-color: white;
-    padding: 40px;
-    max-width: 600px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  .upload-container, .retrieve-container {
+    background-color: #ffffff;
+    padding: 50px 40px;
+    max-width: 650px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
   
-  .upload-container h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
+  .upload-container h2, .retrieve-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
     color: #333;
+    font-weight: 600;
   }
   
   .file-label {
@@ -156,6 +157,16 @@
     background-color: #0056b3;
   }
   
+  .retrieve-container input[type="text"], 
+  .upload-container input[type="file"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(50% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
   button {
     background-color: #007bff;
     color: white;
@@ -165,6 +176,8 @@
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s;
+    margin-top: 15px;
+    width: 150px;
   }
   
   button:hover {

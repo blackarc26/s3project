@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quikup - Secure File Upload</title>
+  <title>Quikup - Secure File Upload & Retrieval</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -14,6 +14,7 @@
       <a href="#">Home</a>
       <a href="#about">About</a>
       <a href="#upload">Upload</a>
+      <a href="#retrieve">Retrieve</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -49,7 +50,23 @@
       </label>
       <button type="submit">Upload</button>
     </form>
-    <div id="status"></div>
+    <div id="uploadStatus"></div>
+  </section>
+
+  <section id="retrieve" class="retrieve-container">
+    <h2>Retrieve Your File from AWS</h2>
+    <p>Enter the bucket name and file name to retrieve your file from AWS cloud storage.</p>
+    <form id="retrieveForm">
+      <label for="bucketName">Bucket Name:</label>
+      <input type="text" id="bucketName" name="bucketName" placeholder="Enter S3 Bucket Name" required />
+      
+      <label for="fileName">File Name:</label>
+      <input type="text" id="fileName" name="fileName" placeholder="Enter File Name" required />
+      
+      <button type="submit">Retrieve</button>
+    </form>
+    <div id="retrieveStatus"></div>
+    <div id="fileContent"></div>
   </section>
 
   <section id="contact" class="contact-section">
