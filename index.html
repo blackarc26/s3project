@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quikup - Secure File Upload</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <h1>Quikup</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#upload">Upload</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <section class="hero-section">
+    <h2>Your Secure File Storage Solution</h2>
+    <p>At Quikup, we believe in the power of data security and disaster recovery. Safeguard your valuable files with our seamless and secure cloud upload system.</p>
+    <a href="#upload" class="cta-button">Get Started</a>
+  </section>
+
+  <section id="about" class="about-section">
+    <h2>About Quikup</h2>
+    <p>Quikup is built on the foundation of trust, security, and innovation. We understand that your files are more than just data—they're memories, ideas, and critical information. Our mission is to provide a reliable platform where you can securely store and manage your files, knowing they’re safe in the cloud.</p>
+    
+    <h3>Our Values</h3>
+    <ul>
+      <li><strong>Security First:</strong> We prioritize your data security, using robust encryption and AWS’s trusted infrastructure to ensure your files are protected at all times.</li>
+      <li><strong>Transparency:</strong> Our processes are clear and user-friendly, ensuring you have full control over your data.</li>
+      <li><strong>Innovation:</strong> Constantly evolving to provide cutting-edge solutions for your file storage and disaster recovery needs.</li>
+    </ul>
+
+    <h3>Why Disaster Recovery Matters</h3>
+    <p>Disaster recovery is more than a safety net—it’s the assurance that your important files are never lost. Natural disasters, hardware failures, or cyberattacks can strike unexpectedly, but with Quikup, your data remains secure and accessible. Our platform empowers businesses and individuals to maintain continuity, minimize downtime, and protect what matters most.</p>
+  </section>
+
+  <section id="upload" class="upload-container">
+    <h2>Upload Your File to AWS</h2>
+    <p>Securely upload your files to AWS cloud storage.</p>
+    <form id="uploadForm">
+      <label for="fileInput" class="file-label">
+        <input type="file" id="fileInput" name="file" required hidden />
+        <span>Choose File</span>
+      </label>
+      <button type="submit">Upload</button>
+    </form>
+    <div id="status"></div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions or need support? Reach out to us and we'll be happy to assist you.</p>
+    <p>Email: <a href="mailto:support@quikup.com">support@quikup.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Quikup. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
