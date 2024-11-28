@@ -55,6 +55,7 @@
     background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
     text-align: center;
+    margin-top: 100px;
     padding: 100px 20px 80px;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
